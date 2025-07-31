@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Messages | Babawatoto OMS</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body class="bg-gray-50">
+  <div class="app-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="logo.png" alt="Babawatoto Logo" class="logo">
+        <h1 class="org-name">Babawatoto OMS</h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <h3 class="nav-section-title">Main</h3>
+          <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home nav-icon"></i><span>Dashboard</span></a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram nav-icon"></i><span>Projects</span></a></li>
+            <li class="nav-item"><a href="monitoring.html" class="nav-link"><i class="fas fa-chart-line nav-icon"></i><span>Monitoring & Evaluation</span></a></li>
+          </ul>
+        </div>
+
+        <div class="nav-section">
+          <h3 class="nav-section-title">Operations</h3>
+          <ul>
+            <li class="nav-item"><a href="hr.html" class="nav-link"><i class="fas fa-users nav-icon"></i><span>HR Management</span></a></li>
+            <li class="nav-item"><a href="finance.html" class="nav-link"><i class="fas fa-wallet nav-icon"></i><span>Finance</span></a></li>
+            <li class="nav-item"><a href="documents.html" class="nav-link"><i class="fas fa-file-alt nav-icon"></i><span>Documents</span></a></li>
+          </ul>
+        </div>
+
+        <div class="nav-section">
+          <h3 class="nav-section-title">Collaboration</h3>
+          <ul>
+            <li class="nav-item active"><a href="messages.html" class="nav-link"><i class="fas fa-comments nav-icon"></i><span>Messages</span></a></li>
+            <li class="nav-item"><a href="calendar.html" class="nav-link"><i class="fas fa-calendar-alt nav-icon"></i><span>Calendar</span></a></li>
+            <li class="nav-item"><a href="beneficiaries.html" class="nav-link"><i class="fas fa-user-friends nav-icon"></i><span>Beneficiaries</span></a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar">NM</div>
+          <div class="user-info">
+            <span class="user-name">Nyalawe Mgunga</span>
+            <span class="user-role">Project Developer</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-header">
+        <div class="header-left">
+          <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+          <h2 class="page-title">Messages</h2>
+        </div>
+        <div class="header-right">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+          </div>
+          <div class="notifications">
+            <i class="fas fa-bell"></i><span class="badge">3</span>
+          </div>
+          <div class="user-menu"><div class="avatar sm">NM</div></div>
+        </div>
+      </header>
+
+      <!-- Content Area -->
+      <div class="content-wrapper">
+        <div class="messages-container">
+
+          <!-- Conversations Sidebar -->
+          <aside class="conversations-sidebar">
+            <div class="conversations-header">
+              <h3>Conversations</h3>
+              <button class="btn primary sm"><i class="fas fa-plus"></i> New</button>
+            </div>
+            <div class="search-box">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search conversations...">
+            </div>
+            <div class="conversations-list">
+              <!-- Repeat conversation-item as needed -->
+              <div class="conversation-item active">
+                <div class="conversation-avatar"><div class="avatar xs">JM</div></div>
+                <div class="conversation-details">
+                  <div class="conversation-header">
+                    <span class="conversation-name">John Mwambene</span>
+                    <span class="conversation-time">10:30 AM</span>
+                  </div>
+                  <p class="conversation-preview">About the AHADI report deadline...</p>
+                </div>
+              </div>
+              <div class="conversation-item unread">
+                <div class="conversation-avatar"><div class="avatar xs">SK</div></div>
+                <div class="conversation-details">
+                  <div class="conversation-header">
+                    <span class="conversation-name">Sarah Kileo</span>
+                    <span class="conversation-time">Yesterday</span>
+                  </div>
+                  <p class="conversation-preview">The Mwanza field visit photos are ready...</p>
+                </div>
+              </div>
+              <!-- Add more conversation items here -->
+            </div>
+          </aside>
+
+          <!-- Conversation Area -->
+          <div class="conversation-area">
+            <div class="conversation-header">
+              <div class="conversation-info">
+                <div class="avatar sm">JM</div>
+                <div>
+                  <h3>John Mwambene</h3>
+                  <p class="text-sm text-gray-500">Project Manager - AHADI Project</p>
+                </div>
+              </div>
+              <div class="conversation-actions">
+                <button class="icon-btn"><i class="fas fa-phone"></i></button>
+                <button class="icon-btn"><i class="fas fa-video"></i></button>
+                <button class="icon-btn"><i class="fas fa-ellipsis-v"></i></button>
+              </div>
+            </div>
+
+            <div class="messages-list">
+              <div class="message-date">Today</div>
+              <div class="message received">
+                <div class="message-avatar"><div class="avatar xs">JM</div></div>
+                <div class="message-content">
+                  <div class="message-text">Hi Nyalawe, do you have an update on the AHADI report deadline? The donor is asking for it by Friday.</div>
+                  <div class="message-time">10:30 AM</div>
+                </div>
+              </div>
+              <div class="message sent">
+                <div class="message-content">
+                  <div class="message-text">Yes, I'm working on it now. I should have it ready by tomorrow afternoon.</div>
+                  <div class="message-time">10:32 AM</div>
+                </div>
+              </div>
+              <!-- Continue with more messages -->
+            </div>
+
+            <div class="message-input">
+              <div class="input-actions">
+                <button class="icon-btn"><i class="fas fa-paperclip"></i></button>
+                <button class="icon-btn"><i class="fas fa-smile"></i></button>
+              </div>
+              <input type="text" placeholder="Type a message...">
+              <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <img src="media/image1.png" alt="Babawatoto Logo" class="logo">
+      <button class="mobile-menu-close" id="mobileMenuClose"><i class="fas fa-times"></i></button>
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li class="mobile-nav-item"><i class="fas fa-home"></i><span>Dashboard</span></li>
+        <li class="mobile-nav-item"><i class="fas fa-project-diagram"></i><span>Projects</span></li>
+        <li class="mobile-nav-item"><i class="fas fa-chart-line"></i><span>M&E</span></li>
+        <li class="mobile-nav-item"><i class="fas fa-users"></i><span>HR</span></li>
+        <li class="mobile-nav-item"><i class="fas fa-wallet"></i><span>Finance</span></li>
+        <li class="mobile-nav-item"><i class="fas fa-file-alt"></i><span>Documents</span></li>
+        <li class="mobile-nav-item active"><i class="fas fa-comments"></i><span>Messages</span></li>
+        <li class="mobile-nav-item"><i class="fas fa-calendar-alt"></i><span>Calendar</span></li>
+      </ul>
+    </nav>
+    <div class="mobile-user-profile">
+      <div class="avatar">NM</div>
+      <div class="user-info">
+        <span class="user-name">Nyalawe Mgunga</span>
+        <span class="user-role">Project Developer</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Babawatoto OMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="app-container">
+        <!-- Sidebar Navigation (same as dashboard) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="Babawatoto Logo" class="logo">
+                <h1 class="org-name">Babawatoto OMS</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Main</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fas fa-home nav-icon"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="projects.html" class="nav-link">
+                                <i class="fas fa-project-diagram nav-icon"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="monitoring.html" class="nav-link">
+                                <i class="fas fa-chart-line nav-icon"></i>
+                                <span>Monitoring & Evaluation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Operations</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <i class="fas fa-users nav-icon"></i>
+                            <span>HR Management</span>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fas fa-wallet nav-icon"></i>
+                            <span>Finance</span>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fas fa-file-alt nav-icon"></i>
+                            <span>Documents</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Collaboration</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <i class="fas fa-comments nav-icon"></i>
+                            <span>Messages</span>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fas fa-calendar-alt nav-icon"></i>
+                            <span>Calendar</span>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fas fa-user-friends nav-icon"></i>
+                            <span>Beneficiaries</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">NM</div>
+                    <div class="user-info">
+                        <span class="user-name">Nyalawe Mgunga</span>
+                        <span class="user-role">Project Developer</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header (same as dashboard) -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 class="page-title">Projects</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-menu">
+                        <div class="avatar sm">NM</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Projects Content -->
+            <div class="content-wrapper">
+                <!-- Projects Header -->
+                <section class="section-header">
+                    <div>
+                        <h2>All Projects</h2>
+                        <p class="text-gray-600">Manage and track all organizational projects</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search projects...">
+                        </div>
+                        <button class="btn primary">
+                            <i class="fas fa-plus"></i> New Project
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Projects Filter -->
+                <section class="bg-white p-4 rounded-lg shadow mb-6">
+                    <div class="flex items-center gap-6">
+                        <div class="filter-group">
+                            <label class="filter-label">Status</label>
+                            <select class="filter-select">
+                                <option>All Statuses</option>
+                                <option>Active</option>
+                                <option>Planning</option>
+                                <option>Completed</option>
+                                <option>On Hold</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label">Donor</label>
+                            <select class="filter-select">
+                                <option>All Donors</option>
+                                <option>AHADI Project</option>
+                                <option>World Vision</option>
+                                <option>Canada</option>
+                                <option>UKAID</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label">Region</label>
+                            <select class="filter-select">
+                                <option>All Regions</option>
+                                <option>Dar es Salaam</option>
+                                <option>Mwanza</option>
+                                <option>Arusha</option>
+                                <option>Dodoma</option>
+                            </select>
+                        </div>
+                        <button class="btn-text ml-auto">
+                            <i class="fas fa-filter"></i> Advanced Filters
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Projects Table -->
+                <section class="bg-white rounded-lg shadow overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="projects-table">
+                            <thead>
+                                <tr>
+                                    <th class="w-48">Project Name</th>
+                                    <th>Donor</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Budget</th>
+                                    <th>Progress</th>
+                                    <th>Status</th>
+                                    <th class="w-20">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="project-name-cell">
+                                            <div class="avatar xs">AP</div>
+                                            <div>
+                                                <p class="font-medium">AHADI Project</p>
+                                                <p class="text-sm text-gray-500">Youth empowerment</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>AHADI, UKAID</td>
+                                    <td>Jan 2025</td>
+                                    <td>Dec 2026</td>
+                                    <td>$450,000</td>
+                                    <td>
+                                        <div class="progress-cell">
+                                            <div class="progress-info">
+                                                <span>42%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 42%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge primary">Active</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="project-name-cell">
+                                            <div class="avatar xs">SI</div>
+                                            <div>
+                                                <p class="font-medium">SRHR Initiative</p>
+                                                <p class="text-sm text-gray-500">Health rights</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>World Vision</td>
+                                    <td>Mar 2025</td>
+                                    <td>Feb 2026</td>
+                                    <td>$210,000</td>
+                                    <td>
+                                        <div class="progress-cell">
+                                            <div class="progress-info">
+                                                <span>68%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 68%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge primary">Active</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="project-name-cell">
+                                            <div class="avatar xs">EF</div>
+                                            <div>
+                                                <p class="font-medium">Education for All</p>
+                                                <p class="text-sm text-gray-500">Child education</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Canada</td>
+                                    <td>Sep 2025</td>
+                                    <td>Aug 2027</td>
+                                    <td>$320,000</td>
+                                    <td>
+                                        <div class="progress-cell">
+                                            <div class="progress-info">
+                                                <span>5%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 5%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge warning">Planning</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="project-name-cell">
+                                            <div class="avatar xs">GB</div>
+                                            <div>
+                                                <p class="font-medium">Gender-Based Violence Prevention</p>
+                                                <p class="text-sm text-gray-500">Community awareness</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>AHADI, UKAID</td>
+                                    <td>Jun 2024</td>
+                                    <td>May 2025</td>
+                                    <td>$180,000</td>
+                                    <td>
+                                        <div class="progress-cell">
+                                            <div class="progress-info">
+                                                <span>92%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 92%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge success">Closing</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="project-name-cell">
+                                            <div class="avatar xs">YE</div>
+                                            <div>
+                                                <p class="font-medium">Youth Employment Program</p>
+                                                <p class="text-sm text-gray-500">Skills development</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Canada</td>
+                                    <td>Aug 2023</td>
+                                    <td>Jul 2025</td>
+                                    <td>$275,000</td>
+                                    <td>
+                                        <div class="progress-cell">
+                                            <div class="progress-info">
+                                                <span>76%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 76%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge primary">Active</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-footer">
+                        <div class="table-pagination">
+                            <button class="pagination-btn disabled">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="table-summary">
+                            Showing 1 to 5 of 12 projects
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="media/image1.png" alt="Babawatoto Logo" class="logo">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li class="mobile-nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>M&E</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>HR</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Finance</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documents</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Messages</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Calendar</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-user-profile">
+            <div class="avatar">NM</div>
+            <div class="user-info">
+                <span class="user-name">Nyalawe Mgunga</span>
+                <span class="user-role">Project Developer</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar | Babawatoto OMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="Babawatoto Logo" class="logo">
+                <h1 class="org-name">Babawatoto OMS</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Main</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fas fa-home nav-icon"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">
+                                <i class="fas fa-project-diagram nav-icon"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="monitoring.html" class="nav-link">
+                                <i class="fas fa-chart-line nav-icon"></i>
+                                <span>Monitoring & Evaluation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Operations</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="hr.html" class="nav-link">
+                                <i class="fas fa-users nav-icon"></i>
+                                <span>HR Management</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="finance.html" class="nav-link">
+                                <i class="fas fa-wallet nav-icon"></i>
+                                <span>Finance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="documents.html" class="nav-link">
+                                <i class="fas fa-file-alt nav-icon"></i>
+                                <span>Documents</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Collaboration</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link">
+                                <i class="fas fa-comments nav-icon"></i>
+                                <span>Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="calendar.html" class="nav-link">
+                                <i class="fas fa-calendar-alt nav-icon"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="beneficiaries.html" class="nav-link">
+                                <i class="fas fa-user-friends nav-icon"></i>
+                                <span>Beneficiaries</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">NM</div>
+                    <div class="user-info">
+                        <span class="user-name">Nyalawe Mgunga</span>
+                        <span class="user-role">Project Developer</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 class="page-title">Calendar</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search events...">
+                    </div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-menu">
+                        <div class="avatar sm">NM</div>
+                        <div class="user-dropdown">
+                            <span class="user-name">Nyalawe Mgunga</span>
+                            <span class="user-role">Project Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Calendar Content -->
+            <div class="content-wrapper">
+                <!-- Calendar Header -->
+                <section class="section-header">
+                    <div>
+                        <h2>Organization Calendar</h2>
+                        <p class="text-gray-600">View and manage all organizational events</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search events...">
+                        </div>
+                        <button class="btn primary">
+                            <i class="fas fa-plus"></i> New Event
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Calendar View Options -->
+                <section class="bg-white p-4 rounded-lg shadow mb-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <button class="btn secondary">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <h3 class="text-lg font-semibold">June 2025</h3>
+                            <button class="btn secondary">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <button class="btn-text">
+                                Today
+                            </button>
+                        </div>
+                        <div class="view-options">
+                            <button class="btn-text">Day</button>
+                            <button class="btn-text">Week</button>
+                            <button class="btn-text active">Month</button>
+                            <button class="btn-text">Year</button>
+                            <button class="btn-text">
+                                <i class="fas fa-download"></i> Export
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Calendar Grid -->
+                <section class="calendar-grid">
+                    <div class="calendar-header">
+                        <div class="calendar-day-header">Sunday</div>
+                        <div class="calendar-day-header">Monday</div>
+                        <div class="calendar-day-header">Tuesday</div>
+                        <div class="calendar-day-header">Wednesday</div>
+                        <div class="calendar-day-header">Thursday</div>
+                        <div class="calendar-day-header">Friday</div>
+                        <div class="calendar-day-header">Saturday</div>
+                    </div>
+                    <div class="calendar-body">
+                        <!-- Week 1 -->
+                        <div class="calendar-week">
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day">
+                                <div class="day-number">1</div>
+                                <div class="calendar-event project">
+                                    <span>AHADI Q2 Report Due</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">2</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">3</div>
+                                <div class="calendar-event financial">
+                                    <span>Salary Payments</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">4</div>
+                            </div>
+                        </div>
+                        <!-- Week 2 -->
+                        <div class="calendar-week">
+                            <div class="calendar-day">
+                                <div class="day-number">5</div>
+                                <div class="calendar-event meeting">
+                                    <span>Project Proposal Discussion</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">6</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">7</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">8</div>
+                                <div class="calendar-event hr">
+                                    <span>HR: Policy Review</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">9</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">10</div>
+                                <div class="calendar-event project">
+                                    <span>Donor Report Submission</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">11</div>
+                            </div>
+                        </div>
+                        <!-- Week 3 -->
+                        <div class="calendar-week">
+                            <div class="calendar-day">
+                                <div class="day-number">12</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">13</div>
+                                <div class="calendar-event training">
+                                    <span>M&E Tools Training</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">14</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">15</div>
+                                <div class="calendar-event meeting">
+                                    <span>Quarterly Review Meeting</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">16</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">17</div>
+                                <div class="calendar-event field">
+                                    <span>Field Visit - Mwanza</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">18</div>
+                                <div class="calendar-event training">
+                                    <span>Staff Training</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Week 4 -->
+                        <div class="calendar-week">
+                            <div class="calendar-day">
+                                <div class="day-number">19</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">20</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">21</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">22</div>
+                                <div class="calendar-event hr">
+                                    <span>Performance Appraisals Due</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">23</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">24</div>
+                                <div class="calendar-event meeting">
+                                    <span>Donor Meeting</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">25</div>
+                            </div>
+                        </div>
+                        <!-- Week 5 -->
+                        <div class="calendar-week">
+                            <div class="calendar-day">
+                                <div class="day-number">26</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">27</div>
+                                <div class="calendar-event field">
+                                    <span>Field Visit - Arusha</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">28</div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">29</div>
+                                <div class="calendar-event financial">
+                                    <span>Budget Review</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day">
+                                <div class="day-number">30</div>
+                            </div>
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day empty"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Upcoming Events -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Upcoming Events</h2>
+                        <div class="flex gap-2">
+                            <button class="btn-text">
+                                <i class="fas fa-filter"></i> Filter
+                            </button>
+                            <a href="#" class="btn-text">View All</a>
+                        </div>
+                    </div>
+                    <div class="upcoming-events">
+                        <div class="event-card">
+                            <div class="event-date bg-blue-600">
+                                <div class="event-day">15</div>
+                                <div class="event-month">Jun</div>
+                            </div>
+                            <div class="event-details">
+                                <h3>Quarterly Review Meeting</h3>
+                                <p class="event-time">
+                                    <i class="fas fa-clock"></i> 10:00 AM - 12:00 PM
+                                </p>
+                                <p class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i> Conference Room
+                                </p>
+                                <div class="event-members">
+                                    <div class="avatar xs">JM</div>
+                                    <div class="avatar xs">SK</div>
+                                    <div class="avatar xs">AP</div>
+                                    <div class="avatar xs">+3</div>
+                                </div>
+                            </div>
+                            <div class="event-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date bg-purple-600">
+                                <div class="event-day">18</div>
+                                <div class="event-month">Jun</div>
+                            </div>
+                            <div class="event-details">
+                                <h3>Staff Training: M&E Tools</h3>
+                                <p class="event-time">
+                                    <i class="fas fa-clock"></i> 9:00 AM - 3:00 PM
+                                </p>
+                                <p class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i> Training Center
+                                </p>
+                                <div class="event-members">
+                                    <div class="avatar xs">SK</div>
+                                    <div class="avatar xs">MT</div>
+                                    <div class="avatar xs">+8</div>
+                                </div>
+                            </div>
+                            <div class="event-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date bg-green-600">
+                                <div class="event-day">22</div>
+                                <div class="event-month">Jun</div>
+                            </div>
+                            <div class="event-details">
+                                <h3>Performance Appraisals Due</h3>
+                                <p class="event-time">
+                                    <i class="fas fa-clock"></i> All day
+                                </p>
+                                <div class="event-members">
+                                    All Staff
+                                </div>
+                            </div>
+                            <div class="event-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="media/image1.png" alt="Babawatoto Logo" class="logo">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>M&E</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>HR</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Finance</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documents</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Messages</span>
+                </li>
+                <li class="mobile-nav-item active">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Calendar</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-user-profile">
+            <div class="avatar">NM</div>
+            <div class="user-info">
+                <span class="user-name">Nyalawe Mgunga</span>
+                <span class="user-role">Project Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

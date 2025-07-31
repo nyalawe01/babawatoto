@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance | Babawatoto OMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="app-container">
+        <!-- Sidebar Navigation (same as dashboard) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="Babawatoto Logo" class="logo">
+                <h1 class="org-name">Babawatoto OMS</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Main</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fas fa-home nav-icon"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">
+                                <i class="fas fa-project-diagram nav-icon"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="monitoring.html" class="nav-link">
+                                <i class="fas fa-chart-line nav-icon"></i>
+                                <span>Monitoring & Evaluation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Operations</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="hr.html" class="nav-link">
+                                <i class="fas fa-users nav-icon"></i>
+                                <span>HR Management</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="finance.html" class="nav-link">
+                                <i class="fas fa-wallet nav-icon"></i>
+                                <span>Finance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="documents.html" class="nav-link">
+                                <i class="fas fa-file-alt nav-icon"></i>
+                                <span>Documents</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Collaboration</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link">
+                                <i class="fas fa-comments nav-icon"></i>
+                                <span>Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <i class="fas fa-calendar-alt nav-icon"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="beneficiaries.html" class="nav-link">
+                                <i class="fas fa-user-friends nav-icon"></i>
+                                <span>Beneficiaries</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header (same as dashboard) -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 class="page-title">Finance Management</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-menu">
+                        <div class="avatar sm">NM</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Finance Content -->
+            <div class="content-wrapper">
+                <!-- Finance Header -->
+                <section class="section-header">
+                    <div>
+                        <h2>Financial Overview</h2>
+                        <p class="text-gray-600">Track budgets, expenses, and financial reports</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search transactions...">
+                        </div>
+                        <button class="btn primary">
+                            <i class="fas fa-plus"></i> New Transaction
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Financial Stats -->
+                <section class="stats-grid mb-6">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-blue-100 text-blue-600">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Budget</h3>
+                            <p class="stat-value">$1,250,000</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> $150,000 from last quarter
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-green-100 text-green-600">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Expenses</h3>
+                            <p class="stat-value">$875,000</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> $125,000 this quarter
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-purple-100 text-purple-600">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Utilization Rate</h3>
+                            <p class="stat-value">70%</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-orange-100 text-orange-600">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Pending Approvals</h3>
+                            <p class="stat-value">12</p>
+                            <p class="stat-change neutral">
+                                <i class="fas fa-minus"></i> No change
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Budget vs Actual -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Budget vs Actual</h2>
+                        <div class="time-filter">
+                            <button class="btn-text active">Quarterly</button>
+                            <button class="btn-text">Yearly</button>
+                            <button class="btn-text">Custom</button>
+                        </div>
+                    </div>
+                    <div class="chart-container" style="height: 300px;">
+                        <canvas id="budgetVsActualChart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Financial Transactions -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recent Transactions</h2>
+                        <div class="flex gap-2">
+                            <button class="btn-text">
+                                <i class="fas fa-download"></i> Export
+                            </button>
+                            <button class="btn-text">
+                                <i class="fas fa-filter"></i> Filter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="transactions-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Project</th>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                    <th>Payment Method</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10 Jun 2025</td>
+                                    <td>Office Rent - Q3 2025</td>
+                                    <td>Administration</td>
+                                    <td>Facilities</td>
+                                    <td class="font-medium">$2,500</td>
+                                    <td>Bank Transfer</td>
+                                    <td><span class="badge success">Completed</span></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-receipt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8 Jun 2025</td>
+                                    <td>Field Supplies - Mwanza</td>
+                                    <td>AHADI Project</td>
+                                    <td>Materials</td>
+                                    <td class="font-medium">$1,200</td>
+                                    <td>MPesa</td>
+                                    <td><span class="badge success">Completed</span></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-receipt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5 Jun 2025</td>
+                                    <td>Training Workshop - Arusha</td>
+                                    <td>Youth Employment</td>
+                                    <td>Training</td>
+                                    <td class="font-medium">$3,750</td>
+                                    <td>Bank Transfer</td>
+                                    <td><span class="badge warning">Pending Approval</span></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-check"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3 Jun 2025</td>
+                                    <td>Staff Salaries - June 2025</td>
+                                    <td>Administration</td>
+                                    <td>Salaries</td>
+                                    <td class="font-medium">$28,400</td>
+                                    <td>Bank Transfer</td>
+                                    <td><span class="badge success">Completed</span></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-receipt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1 Jun 2025</td>
+                                    <td>Vehicle Maintenance</td>
+                                    <td>Operations</td>
+                                    <td>Transport</td>
+                                    <td class="font-medium">$850</td>
+                                    <td>MPesa</td>
+                                    <td><span class="badge success">Completed</span></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-receipt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-footer">
+                        <div class="table-pagination">
+                            <button class="pagination-btn disabled">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="table-summary">
+                            Showing 1 to 5 of 28 transactions
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Budget Allocation -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Budget Allocation</h2>
+                        <button class="btn-text">
+                            <i class="fas fa-download"></i> Export Report
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="budgetAllocationChart"></canvas>
+                        </div>
+                        <div>
+                            <div class="budget-list">
+                                <div class="budget-item">
+                                    <div class="budget-category">
+                                        <div class="budget-color bg-blue-600"></div>
+                                        <span>Program Activities</span>
+                                    </div>
+                                    <div class="budget-amount">$750,000</div>
+                                    <div class="budget-percent">60%</div>
+                                </div>
+                                <div class="budget-item">
+                                    <div class="budget-category">
+                                        <div class="budget-color bg-green-600"></div>
+                                        <span>Staff Salaries</span>
+                                    </div>
+                                    <div class="budget-amount">$300,000</div>
+                                    <div class="budget-percent">24%</div>
+                                </div>
+                                <div class="budget-item">
+                                    <div class="budget-category">
+                                        <div class="budget-color bg-purple-600"></div>
+                                        <span>Administration</span>
+                                    </div>
+                                    <div class="budget-amount">$100,000</div>
+                                    <div class="budget-percent">8%</div>
+                                </div>
+                                <div class="budget-item">
+                                    <div class="budget-category">
+                                        <div class="budget-color bg-orange-600"></div>
+                                        <span>Monitoring & Evaluation</span>
+                                    </div>
+                                    <div class="budget-amount">$75,000</div>
+                                    <div class="budget-percent">6%</div>
+                                </div>
+                                <div class="budget-item">
+                                    <div class="budget-category">
+                                        <div class="budget-color bg-yellow-600"></div>
+                                        <span>Other Costs</span>
+                                    </div>
+                                    <div class="budget-amount">$25,000</div>
+                                    <div class="budget-percent">2%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu (same as dashboard) -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="media/image1.png" alt="Babawatoto Logo" class="logo">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li class="mobile-nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>M&E</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>HR</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Finance</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documents</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Messages</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Calendar</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-user-profile">
+            <div class="avatar">NM</div>
+            <div class="user-info">
+                <span class="user-name">Nyalawe Mgunga</span>
+                <span class="user-role">Project Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Finance charts
+            const budgetVsActualCtx = document.getElementById('budgetVsActualChart').getContext('2d');
+            const budgetVsActualChart = new Chart(budgetVsActualCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Q1 2025', 'Q2 2025', 'Q3 2025', 'Q4 2025'],
+                    datasets: [
+                        {
+                            label: 'Budget',
+                            data: [300000, 310000, 320000, 320000],
+                            backgroundColor: '#93c5fd',
+                            borderColor: '#2563eb',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Actual',
+                            data: [280000, 290000, 305000, 0],
+                            backgroundColor: '#86efac',
+                            borderColor: '#16a34a',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + (value / 1000) + 'k';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+            
+            const budgetAllocationCtx = document.getElementById('budgetAllocationChart').getContext('2d');
+            const budgetAllocationChart = new Chart(budgetAllocationCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Program Activities', 'Staff Salaries', 'Administration', 'M&E', 'Other Costs'],
+                    datasets: [{
+                        data: [750000, 300000, 100000, 75000, 25000],
+                        backgroundColor: ['#2563eb', '#16a34a', '#9333ea', '#ea580c', '#ca8a04'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.raw || 0;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${label}: $${value.toLocaleString()} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

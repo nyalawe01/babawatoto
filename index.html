@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babawatoto OMS Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="Babawatoto Logo" class="logo">
+                <h1 class="org-name">Babawatoto OMS</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Main</h3>
+                    <ul>
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">
+                            <i class="fas fa-home nav-icon"></i>
+                            <span>Dashboard</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">
+                            <i class="fas fa-project-diagram nav-icon"></i>
+                            <span>Projects</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="monitoring.html" class="nav-link">
+                            <i class="fas fa-chart-line nav-icon"></i>
+                            <span>Monitoring & Evaluation</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Operations</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="hr.html" class="nav-link">
+                            <i class="fas fa-users nav-icon"></i>
+                            <span>HR Management</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="finance.html" class="nav-link">
+                            <i class="fas fa-wallet nav-icon"></i>
+                            <span>Finance</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="documents.html" class="nav-link">
+                            <i class="fas fa-file-alt nav-icon"></i>
+                            <span>Documents</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Collaboration</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link">
+                            <i class="fas fa-comments nav-icon"></i>
+                            <span>Messages</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                            <i class="fas fa-calendar-alt nav-icon"></i>
+                            <span>Calendar</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="beneficiaries.html" class="nav-link">
+                            <i class="fas fa-user-friends nav-icon"></i>
+                            <span>Beneficiaries</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">NM</div>
+                    <div class="user-info">
+                        <span class="user-name">Nyalawe Mgunga</span>
+                        <span class="user-role">Project Developer</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 class="page-title">Dashboard</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-menu">
+                        <div class="avatar sm">NM</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="content-wrapper">
+                <!-- Welcome Banner -->
+                <section class="welcome-banner">
+                    <div class="welcome-text">
+                        <h1>Welcome back, Nyalawe</h1>
+                        <p>Here's what's happening with your projects today</p>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="btn primary">
+                            <i class="fas fa-plus"></i> New Report
+                        </button>
+                        <button class="btn secondary">
+                            <i class="fas fa-upload"></i> Upload Documents
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Stats Overview -->
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-blue-100 text-blue-600">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Active Projects</h3>
+                            <p class="stat-value">5</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 2 from last month
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-green-100 text-green-600">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Staff Members</h3>
+                            <p class="stat-value">42</p>
+                            <p class="stat-change neutral">
+                                <i class="fas fa-minus"></i> No change
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-purple-100 text-purple-600">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Budget Utilization</h3>
+                            <p class="stat-value">78%</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-orange-100 text-orange-600">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Field Reports</h3>
+                            <p class="stat-value">14</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 5 this week
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Active Projects</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>AHADI Project</h3>
+                                <span class="badge primary">Active</span>
+                            </div>
+                            <p class="project-description">Youth empowerment, education, and advocacy program</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Jan 2025 - Dec 2026</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                    <span>$450,000</span>
+                                </div>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-info">
+                                    <span>Progress</span>
+                                    <span>42%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 42%"></div>
+                                </div>
+                            </div>
+                            <div class="project-team">
+                                <div class="team-avatars">
+                                    <div class="avatar xs">TM</div>
+                                    <div class="avatar xs">JM</div>
+                                    <div class="avatar xs">+3</div>
+                                </div>
+                                <button class="btn-text">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>SRHR Initiative</h3>
+                                <span class="badge primary">Active</span>
+                            </div>
+                            <p class="project-description">Sexual and reproductive health rights program</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Mar 2025 - Feb 2026</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                    <span>$210,000</span>
+                                </div>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-info">
+                                    <span>Progress</span>
+                                    <span>68%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 68%"></div>
+                                </div>
+                            </div>
+                            <div class="project-team">
+                                <div class="team-avatars">
+                                    <div class="avatar xs">AM</div>
+                                    <div class="avatar xs">SK</div>
+                                    <div class="avatar xs">+2</div>
+                                </div>
+                                <button class="btn-text">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Education for All</h3>
+                                <span class="badge warning">Starting Soon</span>
+                            </div>
+                            <p class="project-description">Improving access to education for vulnerable children</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Sep 2025 - Aug 2027</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                    <span>$320,000</span>
+                                </div>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-info">
+                                    <span>Progress</span>
+                                    <span>5%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 5%"></div>
+                                </div>
+                            </div>
+                            <div class="project-team">
+                                <div class="team-avatars">
+                                    <div class="avatar xs">NM</div>
+                                    <div class="avatar xs">+1</div>
+                                </div>
+                                <button class="btn-text">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts Section -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Project Performance</h2>
+                        <div class="time-filter">
+                            <button class="btn-text active">Monthly</button>
+                            <button class="btn-text">Quarterly</button>
+                            <button class="btn-text">Yearly</button>
+                        </div>
+                    </div>
+                    <div class="charts-grid">
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h3>Beneficiaries Reached</h3>
+                                <select class="chart-filter">
+                                    <option>AHADI Project</option>
+                                    <option>SRHR Initiative</option>
+                                    <option>All Projects</option>
+                                </select>
+                            </div>
+                            <div class="chart-container">
+                                <canvas id="beneficiariesChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h3>Budget Utilization</h3>
+                                <select class="chart-filter">
+                                    <option>AHADI Project</option>
+                                    <option>SRHR Initiative</option>
+                                    <option>All Projects</option>
+                                </select>
+                            </div>
+                            <div class="chart-container">
+                                <canvas id="budgetChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Activities -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recent Activities</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="activities-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-file-alt text-blue-600"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>John M.</strong> submitted AHADI Project quarterly report</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-check-circle text-green-600"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Sarah K.</strong> approved budget for Education for All project</p>
+                                <span class="activity-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-user-plus text-purple-600"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>2 new volunteers</strong> joined the SRHR Initiative</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-map-marker-alt text-orange-600"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Field report</strong> uploaded from Mwanza region</p>
+                                <span class="activity-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu (hidden on desktop) -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="media/image1.png" alt="Babawatoto Logo" class="logo">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li class="mobile-nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>M&E</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>HR</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Finance</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documents</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Messages</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Calendar</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-user-profile">
+            <div class="avatar">NM</div>
+            <div class="user-info">
+                <span class="user-name">Nyalawe Mgunga</span>
+                <span class="user-role">Project Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

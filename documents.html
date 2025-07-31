@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents | Babawatoto OMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="Babawatoto Logo" class="logo">
+                <h1 class="org-name">Babawatoto OMS</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Main</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fas fa-home nav-icon"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">
+                                <i class="fas fa-project-diagram nav-icon"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="monitoring.html" class="nav-link">
+                                <i class="fas fa-chart-line nav-icon"></i>
+                                <span>Monitoring & Evaluation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Operations</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="hr.html" class="nav-link">
+                                <i class="fas fa-users nav-icon"></i>
+                                <span>HR Management</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="finance.html" class="nav-link">
+                                <i class="fas fa-wallet nav-icon"></i>
+                                <span>Finance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="documents.html" class="nav-link">
+                                <i class="fas fa-file-alt nav-icon"></i>
+                                <span>Documents</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Collaboration</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link">
+                                <i class="fas fa-comments nav-icon"></i>
+                                <span>Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <i class="fas fa-calendar-alt nav-icon"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="beneficiaries.html" class="nav-link">
+                                <i class="fas fa-user-friends nav-icon"></i>
+                                <span>Beneficiaries</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">NM</div>
+                    <div class="user-info">
+                        <span class="user-name">Nyalawe Mgunga</span>
+                        <span class="user-role">Project Developer</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 class="page-title">Document Management</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-menu">
+                        <div class="avatar sm">NM</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Documents Content -->
+            <div class="content-wrapper">
+                <!-- Documents Header -->
+                <section class="section-header">
+                    <div>
+                        <h2>Organization Documents</h2>
+                        <p class="text-gray-600">Central repository for all organizational documents</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search documents...">
+                        </div>
+                        <button class="btn primary">
+                            <i class="fas fa-upload"></i> Upload
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Document Categories -->
+                <section class="bg-white p-4 rounded-lg shadow mb-6">
+                    <div class="flex items-center gap-6 overflow-x-auto pb-2">
+                        <button class="category-btn active">All Documents</button>
+                        <button class="category-btn">Policies</button>
+                        <button class="category-btn">Project Reports</button>
+                        <button class="category-btn">Financial</button>
+                        <button class="category-btn">HR</button>
+                        <button class="category-btn">Proposals</button>
+                        <button class="category-btn">Training Materials</button>
+                        <button class="category-btn">M&E Tools</button>
+                    </div>
+                </section>
+
+                <!-- Documents Grid -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recent Documents</h2>
+                        <div class="flex gap-2">
+                            <button class="btn-text">
+                                <i class="fas fa-list"></i> List View
+                            </button>
+                            <button class="btn-text">
+                                <i class="fas fa-filter"></i> Filter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf text-red-600"></i>
+                            </div>
+                            <div class="document-details">
+                                <h3>AHADI Q2 2025 Report</h3>
+                                <p class="text-sm text-gray-500">Project Reports • 2.4 MB</p>
+                                <div class="document-meta">
+                                    <span class="text-sm">Uploaded: 10 Jun 2025</span>
+                                    <span class="text-sm">By: John M.</span>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-word text-blue-600"></i>
+                            </div>
+                            <div class="document-details">
+                                <h3>SRHR Initiative Proposal</h3>
+                                <p class="text-sm text-gray-500">Proposals • 1.8 MB</p>
+                                <div class="document-meta">
+                                    <span class="text-sm">Uploaded: 5 Jun 2025</span>
+                                    <span class="text-sm">By: Sarah K.</span>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-excel text-green-600"></i>
+                            </div>
+                            <div class="document-details">
+                                <h3>Financial Report Q1 2025</h3>
+                                <p class="text-sm text-gray-500">Financial • 3.2 MB</p>
+                                <div class="document-meta">
+                                    <span class="text-sm">Uploaded: 1 Jun 2025</span>
+                                    <span class="text-sm">By: Anna P.</span>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf text-red-600"></i>
+                            </div>
+                            <div class="document-details">
+                                <h3>Staff Policy Handbook</h3>
+                                <p class="text-sm text-gray-500">Policies • 4.5 MB</p>
+                                <div class="document-meta">
+                                    <span class="text-sm">Uploaded: 25 May 2025</span>
+                                    <span class="text-sm">By: HR Department</span>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-powerpoint text-orange-600"></i>
+                            </div>
+                            <div class="document-details">
+                                <h3>M&E Training Slides</h3>
+                                <p class="text-sm text-gray-500">Training Materials • 5.1 MB</p>
+                                <div class="document-meta">
+                                    <span class="text-sm">Uploaded: 20 May 2025</span>
+                                    <span class="text-sm">By: Sarah K.</span>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-image text-purple-600"></i>
+                            </div>
+                            <div class="document-details">
+                                <h3>Event Photos - June 2025</h3>
+                                <p class="text-sm text-gray-500">Media • 8.7 MB</p>
+                                <div class="document-meta">
+                                    <span class="text-sm">Uploaded: 15 May 2025</span>
+                                    <span class="text-sm">By: Michael T.</span>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <button class="icon-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-footer">
+                        <div class="table-pagination">
+                            <button class="pagination-btn disabled">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="table-summary">
+                            Showing 1 to 6 of 24 documents
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Upload New Document -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Upload New Document</h2>
+                    </div>
+                    <div class="upload-area">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <p class="upload-text">Drag and drop files here or click to browse</p>
+                        <p class="upload-hint">Supports PDF, DOCX, XLSX, PPT, JPG (Max 25MB)</p>
+                        <button class="btn primary mt-4">
+                            <i class="fas fa-folder-open"></i> Select Files
+                        </button>
+                    </div>
+                    <div class="upload-details mt-6">
+                        <div class="form-group">
+                            <label class="form-label">Document Name</label>
+                            <input type="text" class="form-input" placeholder="Enter document name">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label class="form-label">Category</label>
+                                <select class="form-input">
+                                    <option>Select category</option>
+                                    <option>Policies</option>
+                                    <option>Project Reports</option>
+                                    <option>Financial</option>
+                                    <option>HR</option>
+                                    <option>Proposals</option>
+                                    <option>Training Materials</option>
+                                    <option>M&E Tools</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Related Project</label>
+                                <select class="form-input">
+                                    <option>Select project (optional)</option>
+                                    <option>AHADI Project</option>
+                                    <option>SRHR Initiative</option>
+                                    <option>Education for All</option>
+                                    <option>GBV Prevention</option>
+                                    <option>Youth Employment</option>
+                                    <option>Administration</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-input" rows="3" placeholder="Enter document description"></textarea>
+                        </div>
+                        <div class="flex justify-end gap-3 mt-4">
+                            <button class="btn secondary">
+                                Cancel
+                            </button>
+                            <button class="btn primary">
+                                <i class="fas fa-save"></i> Save Document
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="media/image1.png" alt="Babawatoto Logo" class="logo">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>M&E</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>HR</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Finance</span>
+                </li>
+                <li class="mobile-nav-item active">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documents</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Messages</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Calendar</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-user-profile">
+            <div class="avatar">NM</div>
+            <div class="user-info">
+                <span class="user-name">Nyalawe Mgunga</span>
+                <span class="user-role">Project Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
