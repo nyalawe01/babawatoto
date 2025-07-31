@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Management | Babawatoto OMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="Babawatoto Logo" class="logo">
+                <h1 class="org-name">Babawatoto OMS</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Main</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fas fa-home nav-icon"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">
+                                <i class="fas fa-project-diagram nav-icon"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="monitoring.html" class="nav-link">
+                                <i class="fas fa-chart-line nav-icon"></i>
+                                <span>Monitoring & Evaluation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Operations</h3>
+                    <ul>
+                        <li class="nav-item active">
+                            <a href="hr.html" class="nav-link">
+                                <i class="fas fa-users nav-icon"></i>
+                                <span>HR Management</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="finance.html" class="nav-link">
+                                <i class="fas fa-wallet nav-icon"></i>
+                                <span>Finance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="documents.html" class="nav-link">
+                                <i class="fas fa-file-alt nav-icon"></i>
+                                <span>Documents</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Collaboration</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link">
+                                <i class="fas fa-comments nav-icon"></i>
+                                <span>Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <i class="fas fa-calendar-alt nav-icon"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="beneficiaries.html" class="nav-link">
+                                <i class="fas fa-user-friends nav-icon"></i>
+                                <span>Beneficiaries</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">NM</div>
+                    <div class="user-info">
+                        <span class="user-name">Nyalawe Mgunga</span>
+                        <span class="user-role">HR Manager</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 class="page-title">HR Management</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search employees...">
+                    </div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">5</span>
+                    </div>
+                    <div class="user-menu">
+                        <div class="avatar sm">NM</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- HR Content -->
+            <div class="content-wrapper">
+                <!-- HR Header -->
+                <section class="section-header">
+                    <div>
+                        <h2>Human Resources</h2>
+                        <p class="text-gray-600">Manage staff, recruitment, payroll and performance</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search HR records...">
+                        </div>
+                        <button class="btn primary">
+                            <i class="fas fa-plus"></i> Add Employee
+                        </button>
+                    </div>
+                </section>
+
+                <!-- HR Stats -->
+                <section class="stats-grid mb-6">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-blue-100 text-blue-600">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Employees</h3>
+                            <p class="stat-value">87</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 5 new hires this month
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-green-100 text-green-600">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Active Staff</h3>
+                            <p class="stat-value">82</p>
+                            <p class="stat-change neutral">
+                                <i class="fas fa-minus"></i> No change
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-orange-100 text-orange-600">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>On Leave</h3>
+                            <p class="stat-value">3</p>
+                            <p class="stat-change negative">
+                                <i class="fas fa-arrow-down"></i> 2 returned
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-purple-100 text-purple-600">
+                            <i class="fas fa-file-signature"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Pending Approvals</h3>
+                            <p class="stat-value">7</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 3 new requests
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Employee Management -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Employee Directory</h2>
+                        <div class="flex gap-2">
+                            <button class="btn-text">
+                                <i class="fas fa-download"></i> Export
+                            </button>
+                            <button class="btn-text">
+                                <i class="fas fa-filter"></i> Filter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Employee</th>
+                                    <th>Position</th>
+                                    <th>Department</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Join Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="employee-info">
+                                            <div class="avatar sm">JM</div>
+                                            <div>
+                                                <div class="font-medium">John Mwambene</div>
+                                                <div class="text-sm text-gray-500">john.m@babawatoto.org</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Project Manager</td>
+                                    <td>Programs</td>
+                                    <td>Dar es Salaam</td>
+                                    <td><span class="badge success">Active</span></td>
+                                    <td>15 Jan 2023</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="employee-info">
+                                            <div class="avatar sm">SK</div>
+                                            <div>
+                                                <div class="font-medium">Sarah Kileo</div>
+                                                <div class="text-sm text-gray-500">sarah.k@babawatoto.org</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>M&E Officer</td>
+                                    <td>Monitoring</td>
+                                    <td>Mwanza</td>
+                                    <td><span class="badge success">Active</span></td>
+                                    <td>02 Mar 2024</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="employee-info">
+                                            <div class="avatar sm">AP</div>
+                                            <div>
+                                                <div class="font-medium">Anna Petro</div>
+                                                <div class="text-sm text-gray-500">anna.p@babawatoto.org</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Finance Officer</td>
+                                    <td>Finance</td>
+                                    <td>Arusha</td>
+                                    <td><span class="badge warning">On Leave</span></td>
+                                    <td>10 Jun 2022</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="employee-info">
+                                            <div class="avatar sm">MT</div>
+                                            <div>
+                                                <div class="font-medium">Michael Temba</div>
+                                                <div class="text-sm text-gray-500">michael.t@babawatoto.org</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Field Officer</td>
+                                    <td>Operations</td>
+                                    <td>Dodoma</td>
+                                    <td><span class="badge success">Active</span></td>
+                                    <td>05 Sep 2023</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="employee-info">
+                                            <div class="avatar sm">NM</div>
+                                            <div>
+                                                <div class="font-medium">Nyalawe Mgunga</div>
+                                                <div class="text-sm text-gray-500">nyalawe.m@babawatoto.org</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>HR Manager</td>
+                                    <td>Administration</td>
+                                    <td>Head Office</td>
+                                    <td><span class="badge success">Active</span></td>
+                                    <td>15 Jan 2021</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="icon-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="icon-btn">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-footer">
+                        <div class="table-pagination">
+                            <button class="pagination-btn disabled">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="table-summary">
+                            Showing 1 to 5 of 87 employees
+                        </div>
+                    </div>
+                </section>
+
+                <!-- HR Tabs -->
+                <section class="dashboard-section">
+                    <div class="tabs">
+                        <button class="tab-btn active">Recruitment</button>
+                        <button class="tab-btn">Leave Management</button>
+                        <button class="tab-btn">Performance</button>
+                        <button class="tab-btn">Training</button>
+                        <button class="tab-btn">Payroll</button>
+                    </div>
+                    
+                    <!-- Recruitment Content -->
+                    <div class="tab-content active">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-lg font-semibold">Open Positions</h3>
+                            <button class="btn primary">
+                                <i class="fas fa-plus"></i> Post New Job
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <!-- Job Card 1 -->
+                            <div class="job-card">
+                                <div class="job-header">
+                                    <h4>M&E Specialist</h4>
+                                    <span class="badge success">Active</span>
+                                </div>
+                                <div class="job-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Dar es Salaam</p>
+                                    <p><i class="fas fa-calendar-alt"></i> Deadline: 15 Jul 2025</p>
+                                    <p><i class="fas fa-users"></i> 12 Applicants</p>
+                                </div>
+                                <div class="job-actions">
+                                    <button class="btn-text">
+                                        <i class="fas fa-eye"></i> View
+                                    </button>
+                                    <button class="btn-text">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Job Card 2 -->
+                            <div class="job-card">
+                                <div class="job-header">
+                                    <h4>Field Coordinator</h4>
+                                    <span class="badge success">Active</span>
+                                </div>
+                                <div class="job-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Mwanza</p>
+                                    <p><i class="fas fa-calendar-alt"></i> Deadline: 20 Jul 2025</p>
+                                    <p><i class="fas fa-users"></i> 8 Applicants</p>
+                                </div>
+                                <div class="job-actions">
+                                    <button class="btn-text">
+                                        <i class="fas fa-eye"></i> View
+                                    </button>
+                                    <button class="btn-text">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Job Card 3 -->
+                            <div class="job-card">
+                                <div class="job-header">
+                                    <h4>Finance Assistant</h4>
+                                    <span class="badge warning">Closing Soon</span>
+                                </div>
+                                <div class="job-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Arusha</p>
+                                    <p><i class="fas fa-calendar-alt"></i> Deadline: 05 Jul 2025</p>
+                                    <p><i class="fas fa-users"></i> 15 Applicants</p>
+                                </div>
+                                <div class="job-actions">
+                                    <button class="btn-text">
+                                        <i class="fas fa-eye"></i> View
+                                    </button>
+                                    <button class="btn-text">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Actions -->
+                <section class="dashboard-section">
+                    <h3 class="section-title">Quick Actions</h3>
+                    <div class="quick-actions-grid">
+                        <button class="quick-action-btn">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Create Contract</span>
+                        </button>
+                        <button class="quick-action-btn">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Approve Leave</span>
+                        </button>
+                        <button class="quick-action-btn">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance Review</span>
+                        </button>
+                        <button class="quick-action-btn">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Process Payroll</span>
+                        </button>
+                        <button class="quick-action-btn">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Training Records</span>
+                        </button>
+                        <button class="quick-action-btn">
+                            <i class="fas fa-file-export"></i>
+                            <span>Generate Reports</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="media/image1.png" alt="Babawatoto Logo" class="logo">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>M&E</span>
+                </li>
+                <li class="mobile-nav-item active">
+                    <i class="fas fa-users"></i>
+                    <span>HR</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Finance</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documents</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Messages</span>
+                </li>
+                <li class="mobile-nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Calendar</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-user-profile">
+            <div class="avatar">NM</div>
+            <div class="user-info">
+                <span class="user-name">Nyalawe Mgunga</span>
+                <span class="user-role">HR Manager</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons and content
+                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    btn.classList.add('active');
+                    // Note: In a real implementation, you would show the corresponding content
+                });
+            });
+            
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuClose = document.getElementById('mobileMenuClose');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+            });
+            
+            mobileMenuClose.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+            });
+            
+            mobileMenuOverlay.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
